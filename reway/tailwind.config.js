@@ -20,6 +20,10 @@ module.exports = {
       rewayWhite: "#FFFFFF",
       rewayLightgray: "rgba(130,130,130,.5)",
     },
+    fontFamily: {
+      nav: ["Suez One", "sans-serif"],
+      body: ["PT Sans"],
+    },
   },
   plugins: [],
 };
