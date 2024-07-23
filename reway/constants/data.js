@@ -6,6 +6,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = ["Apparels", "shoes", "equipment", "gift"];
-const navIcons = [faGift, faStar, faHeart, faStar];
+const navIcons = [faGift, faStar, faHeart, faTag];
 
 export { navItems, navIcons };

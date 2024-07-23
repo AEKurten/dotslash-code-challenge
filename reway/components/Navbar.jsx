@@ -14,7 +14,6 @@ const Navbar = () => {
       setIsActive(null);
     } else {
       setIsActive(index);
-      console.log(index);
     }
   };
 
@@ -24,7 +23,8 @@ const Navbar = () => {
       <div className="flex gap-8">
         {navItems.map((item, index) => (
           <p
-            className={`font-nav font-extrabold text-[17px] uppercase hover:cursor-pointer hover:text-rewayBlue transition-all duration-300 ${
+            key={item}
+            className={`font-suez font-extrabold text-[17px] uppercase hover:cursor-pointer hover:text-rewayBlue transition-all duration-300 ${
               isActive === index ? `text-rewayBlue` : ``
             }`}
             onClick={() => toggleActiveState(index)}
@@ -36,6 +36,7 @@ const Navbar = () => {
       <div className="flex gap-8">
         {navIcons.map((icon) => (
           <FontAwesomeIcon
+            key={icon}
             icon={icon}
             size="lg"
             className="hover:text-rewayBlue hover:cursor-pointer transition-all duration-300"
@@ -43,12 +44,13 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex gap-8 items-center">
-        <Link href="#" className="uppercase text-rewayBlue font-bold">
+        {/* Create active/hover states */}
+        <Link href="#" className="uppercase text-rewayBlue font-bold font-suez">
           sign up
         </Link>
         <Link
           href="#"
-          className="uppercase text-rewayBlue font-bold border-2 border-rewayBlue px-4 py-2 rounded-[3px]"
+          className="uppercase text-rewayBlue font-bold border-2 border-rewayBlue px-4 py-2 rounded-[3px] font-suez"
         >
           Login
         </Link>

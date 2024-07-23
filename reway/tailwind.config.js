@@ -18,10 +18,11 @@ module.exports = {
       rewayBlack: "#111111",
       rewayGrey: "#828282",
       rewayWhite: "#FFFFFF",
-      rewayLightgray: "rgba(130,130,130,.5)",
+      rewayLightGray: "rgba(130,130,130,.5)",
+      rewayLighterGray: "#EAEAEA",
     },
     fontFamily: {
-      nav: ["Suez One", "sans-serif"],
+      suez: ["Suez One", "sans-serif"],
       body: ["PT Sans"],
     },
   },
