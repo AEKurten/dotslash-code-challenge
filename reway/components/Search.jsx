@@ -1,10 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faSearch } from "@fortawesome/free-solid-svg-icons";
-import TagsInput from "react-tagsinput";
-import "react-tagsinput/react-tagsinput.css";
+import { TagsInput } from "react-tag-input-component";
 
 const Search = () => {
+  const [selected, setSelected] = useState(["SUPERBALIST"]);
   return (
     <div className="border-[2px] border-rewayBlue">
       <div className="bg-rewayBlue text-rewayWhite px-6">
@@ -18,6 +19,16 @@ const Search = () => {
           </p>
           <FontAwesomeIcon icon={faSearch} />
         </div>
+      </div>
+      <div className="px-6">
+        <p>Brands</p>
+
+        <TagsInput
+          value={selected}
+          onChange={setSelected}
+          name="brands"
+          placeHolder="Enter brands"
+        />
       </div>
     </div>
   );
