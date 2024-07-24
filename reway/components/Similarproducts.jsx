@@ -6,7 +6,7 @@ import React from "react";
 const Similarproducts = () => {
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center my-8">
         <p className="w-44">
           more from <span className="text-rewayBlue">boots</span>
         </p>
@@ -15,7 +15,7 @@ const Similarproducts = () => {
       <div className="flex gap-4 flex-wrap">
         {bootData.map((boot) => {
           return (
-            <div className="w-[32%] h-72 flex flex-col">
+            <div className="w-64 h-72 flex flex-col">
               <img src={boot.image} alt="" />
               <p>{boot.title}</p>
               <div className="flex items-center gap-2">
