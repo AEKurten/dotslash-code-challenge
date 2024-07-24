@@ -43,6 +43,7 @@ const Search = () => {
         </div>
         <div>
           <label htmlFor="pricing">Pricing</label>
+          {/* add price slider */}
         </div>
         {/* add toast notifcations and perhaps email.js */}
         <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center">

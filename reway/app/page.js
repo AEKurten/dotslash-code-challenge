@@ -1,9 +1,10 @@
-import BannerStrip from "@/components/BannerStrip";
+import Bannerstrip from "@/components/Bannerstrip";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Emaillist from "@/components/Emaillist";
 import Navbar from "@/components/Navbar";
 import Product from "@/components/Product";
 import Search from "@/components/Search";
+import Similarproducts from "@/components/Similarproducts";
 import { advertBanner, summerSaleBanner } from "@/public/export";
 import Image from "next/image";
 
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <BannerStrip />
+      <Bannerstrip />
       <div className="grid grid-cols-8 px-11 gap-10">
         <div className="col-span-2">
           <Search />
@@ -34,8 +35,10 @@ export default function Home() {
           </div>
           <Breadcrumbs />
           <Product />
+          <Similarproducts />
         </div>
       </div>
+      {/* insert footer here */}
     </main>
   );
 }

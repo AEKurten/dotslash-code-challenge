@@ -11,3 +11,4 @@ const navIcons = [faGift, faStar, faHeart, faTag];
 export { navItems, navIcons };
 
 //Create mock db with products?
+//create data object with product info
