@@ -9,3 +9,5 @@ const navItems = ["Apparels", "shoes", "equipment", "gift"];
 const navIcons = [faGift, faStar, faHeart, faTag];
 
 export { navItems, navIcons };
+
+//Create mock db with products?

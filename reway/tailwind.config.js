@@ -23,7 +23,7 @@ module.exports = {
     },
     fontFamily: {
       suez: ["Suez One", "sans-serif"],
-      body: ["PT Sans"],
+      body: ["PT Sans", "sans-serif"],
     },
   },
   plugins: [],

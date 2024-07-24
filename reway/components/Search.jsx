@@ -5,10 +5,10 @@ import { faChevronLeft, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { TagsInput } from "react-tag-input-component";
 
 const Search = () => {
-  const [selected, setSelected] = useState(["SUPERBALIST"]);
+  const [selected, setSelected] = useState(["SUPERBALIST", "Mango"]);
   return (
     <div className="border-[2px] border-rewayBlue">
-      <div className="bg-rewayBlue text-rewayWhite px-6">
+      <div className="bg-rewayBlue text-rewayWhite p-5">
         <div className="flex items-center gap-2">
           <FontAwesomeIcon icon={faChevronLeft} />
           <p className="text-[16px]">Hide</p>
@@ -20,15 +20,35 @@ const Search = () => {
           <FontAwesomeIcon icon={faSearch} />
         </div>
       </div>
-      <div className="px-6">
-        <p>Brands</p>
-
-        <TagsInput
-          value={selected}
-          onChange={setSelected}
-          name="brands"
-          placeHolder="Enter brands"
-        />
+      <div className="p-6 flex flex-col gap-4">
+        <div>
+          <label>Brands</label>
+          <TagsInput
+            value={selected}
+            onChange={setSelected}
+            name="brands"
+            placeHolder="Enter brands"
+          />
+        </div>
+        <div>
+          <label htmlFor="Colour">Colour</label>
+          <select
+            name="itemColour"
+            id="colour"
+            className="w-full border border-rewayLightGray rounded-sm p-2"
+          >
+            <option value="Yellow">Yellow</option>
+            <option value="Yellow">Blue</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="pricing">Pricing</label>
+        </div>
+        {/* add toast notifcations and perhaps email.js */}
+        <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center">
+          <FontAwesomeIcon icon={faSearch} />
+          Search
+        </button>
       </div>
     </div>
   );
