@@ -1,6 +1,7 @@
 import Bannerstrip from "@/components/Bannerstrip";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Emaillist from "@/components/Emaillist";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Product from "@/components/Product";
 import Search from "@/components/Search";
@@ -39,6 +40,7 @@ export default function Home() {
         </div>
       </div>
       {/* insert footer here */}
+      <Footer />
     </main>
   );
 }
