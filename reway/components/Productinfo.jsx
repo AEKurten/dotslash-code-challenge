@@ -5,8 +5,8 @@ import Chip from "./Chip";
 
 const Productinfo = () => {
   return (
-    <div className="border-[6px] border-rewayBlue p-4 flex flex-col">
-      <p className="uppercase font-suez font-semibold">Dylan Hiker Boot</p>
+    <div className="border-[6px] border-rewayBlue p-4 flex flex-col ">
+      <p className="uppercase font-suez font-bold text-xl">Dylan Hiker Boot</p>
       <div className="flex items-center gap-2 text-rewayLightGray my-1">
         <FontAwesomeIcon icon={faStoreAlt} />
         <p className="font-suez uppercase font-thin">Superbalist</p>

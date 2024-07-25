@@ -16,7 +16,7 @@ export default function Home() {
       <Bannerstrip />
       <main className="flex flex-col items-center">
         <div className="grid grid-cols-10 px-11 gap-12 ">
-          <div className="col-span-3 flex flex-col items-center">
+          <div className="col-span-3 flex flex-col items-center ">
             <Search />
             <Image
               src={advertBanner}
