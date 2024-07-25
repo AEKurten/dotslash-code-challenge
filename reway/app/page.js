@@ -15,19 +15,19 @@ export default function Home() {
       <Navbar />
       <Bannerstrip />
       <main className="flex flex-col items-center">
-        <div className="grid grid-cols-8 px-11 gap-10 max-w-[1419px]">
-          <div className="col-span-2">
+        <div className="grid grid-cols-10 px-11 gap-12 ">
+          <div className="col-span-3 flex flex-col items-center">
             <Search />
             <Image
               src={advertBanner}
               height={616}
               width={307}
-              className="my-8"
+              className="my-8 object-cover w-3/4"
             />
             <Emaillist />
           </div>
-          <div className="col-span-6">
-            <div className=" flex justify-between bg-[url('/images/TopBanner.png')] bg-no-repeat w-[990px] items-center px-20 h-[89px]">
+          <div className="col-span-6 ">
+            <div className=" flex justify-between bg-[url('/images/TopBanner.png')] bg-no-repeat bg-cover  items-center px-20 h-[89px]">
               <div>
                 <h3 className="uppercase text-rewayWhite font-suez text-[30px] font-semibold">
                   Summer sale!
@@ -36,7 +36,7 @@ export default function Home() {
                   Up to 50% off!
                 </p>
               </div>
-              <button className="text-rewayWhite border-2 h-fit px-8 py-2 rounded-[3px] font-suez mr-56 font-semibold">
+              <button className="text-rewayWhite border-2 h-fit px-8 py-2 rounded-[3px] font-suez mr-[30%]  font-semibold">
                 Shop now
               </button>
             </div>

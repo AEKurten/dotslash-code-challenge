@@ -4,9 +4,10 @@ import { faEnvelope, faClose } from "@fortawesome/free-solid-svg-icons";
 
 const Emaillist = () => {
   return (
-    <div className="bg-rewayBlue flex flex-col items-center p-4 text-rewayWhite">
+    <div className="bg-rewayBlue flex flex-col items-center p-4 text-rewayWhite w-full relative">
+      <FontAwesomeIcon icon={faClose} className="absolute top-4 right-5" />
       <FontAwesomeIcon icon={faEnvelope} size="2x" />
-      <h3 className="uppercase text-[20px] font-suez font-semibold">
+      <h3 className="uppercase text-[20px] font-suez font-semibold mt-4">
         Sign up to our mailing list!
       </h3>
       <label

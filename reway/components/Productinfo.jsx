@@ -1,12 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStoreAlt, faTag } from "@fortawesome/free-solid-svg-icons";
+import Chip from "./Chip";
 
 const Productinfo = () => {
   return (
     <div className="border-[6px] border-rewayBlue p-4 flex flex-col">
       <p className="uppercase font-suez font-semibold">Dylan Hiker Boot</p>
-      <div className="flex items-center gap-2 text-rewayLightGray">
+      <div className="flex items-center gap-2 text-rewayLightGray my-1">
         <FontAwesomeIcon icon={faStoreAlt} />
         <p className="font-suez uppercase font-thin">Superbalist</p>
       </div>
@@ -16,7 +17,7 @@ const Productinfo = () => {
           <p>Colour</p>
           <p>Brand</p>
         </div>
-        <div className="col-span-1 flex flex-col gap-2">
+        <div className="col-span-1 flex flex-col gap-2 font-bold">
           <p>Faux Leather</p>
           <div className="flex items-center gap-2">
             <div className="bg-[#91613D] border-2 rounded-full h-4 w-4"></div>
@@ -27,22 +28,26 @@ const Productinfo = () => {
       </div>
       <hr />
       <div className="my-4">
-        <p>Product Details</p>
-        <ul className="list-disc ml-4 mt-2">
+        <p className="uppercase text-rewayLightGray">Product Details</p>
+        <ul className="list-disc ml-4 mt-2 text-rewayGrey">
           <li>Hiking Boot</li>
           <li>Speed laces</li>
           <li>Lace-up design</li>
           <li>Rubber sole</li>
         </ul>
       </div>
-      <div className="self-end flex gap-3">
-        <div className="flex items-center text-rewayWhite bg-rewayBlue rounded-md w-fit px-4 py-1  gap-2">
-          <FontAwesomeIcon icon={faTag} />
-          <p>-40% off</p>
-        </div>
+      <div className="self-end flex gap-8 items-center">
+        <Chip
+          bgColor="rewayBlue"
+          icon={faTag}
+          text="-40% off"
+          textColor="rewayWhite"
+        />
         <div>
-          <p className="line-through">R599</p>
-          <p>R359</p>
+          <p className="line-through text-rewayGrey font-bold font-suez">
+            R599
+          </p>
+          <p className="text-3xl font-black font-suez">R359</p>
         </div>
       </div>
     </div>
