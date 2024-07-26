@@ -7,6 +7,18 @@ import {
 
 const navItems = ["Apparels", "shoes", "equipment", "gift"];
 const navIcons = [faGift, faStar, faHeart, faTag];
+const navbar = [
+  {
+    heading: "Account",
+    items: ["Account details", "Orders", "Returns and Exhanges"],
+    spanLength: "1",
+  },
+  {
+    heading: "The Company",
+    items: ["About us", "Careers", "Contact"],
+    spanLength: "1",
+  },
+];
 
 const bootData = [
   {
@@ -51,7 +63,7 @@ const bootData = [
   },
 ];
 
-export { navItems, navIcons, bootData };
+export { navItems, navIcons, bootData, navbar };
 
 //Create mock db with products?
 //create data object with product info
