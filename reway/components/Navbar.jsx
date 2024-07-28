@@ -27,12 +27,12 @@ const Navbar = () => {
       {isMobile && (
         <div className="flex items-center justify-between w-full">
           <FontAwesomeIcon icon={faBars} size="2x" />
-          <Image src={logo} width={120} height={40} />
+          <Image src={logo} width={120} height={40} alt="logo" />
         </div>
       )}
       {!isMobile && (
         <>
-          <Image src={logo} width={160} height={40} />
+          <Image src={logo} width={160} height={40} alt="logo" />
           <div className="flex gap-8 ">
             {navItems.map((item, index) => (
               <p

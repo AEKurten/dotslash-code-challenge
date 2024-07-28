@@ -29,6 +29,7 @@ export default function Home() {
               height={616}
               width={307}
               className="my-8 object-cover w-11/12"
+              alt="reway banner"
             />
             <Emaillist />
           </div>

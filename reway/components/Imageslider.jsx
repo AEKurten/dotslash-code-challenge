@@ -110,7 +110,12 @@ const Imageslider = () => {
           </div>
           {/* Active Image */}
           <Modal open={open} onClose={onCloseModal} onEscKeyDown={onCloseModal}>
-            <Image src={images[isActive].url} width={1920} height={1080} />
+            <Image
+              src={images[isActive].url}
+              width={1920}
+              height={1080}
+              alt="product image"
+            />
           </Modal>
           <div
             className={`${
