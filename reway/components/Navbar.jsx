@@ -36,7 +36,7 @@ const Navbar = () => {
             <Image src={logo} width={120} height={40} alt="logo" />
           </div>
           {isMobileMenuActive && (
-            <div className=" flex-col absolute left-16 -bottom-80 bg-rewayWhite p-4 rounded-md z-[1000]">
+            <div className=" flex-col absolute left-16 -bottom-80 bg-rewayWhite p-4 rounded-md z-[1000] shadow-lg">
               {navItems.map((item, index) => (
                 <p
                   key={item}
