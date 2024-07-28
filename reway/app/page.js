@@ -14,6 +14,13 @@ import Image from "next/image";
 
 export default function Home() {
   const isMobile = useMobileCheck();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // This ensures we only try rendering after mounting
+  }, []);
+
+  if (!isClient) return null; // Avoid rendering on the server
   return (
     <>
       <Navbar />
