@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="flex mt-8 gap-8">
               <img src="/images/Facebook.svg" className="w-12 cursor-pointer" />
               <img
-                src="/images/instagram.svg"
+                src="/images/Instagram.svg"
                 className="w-12 cursor-pointer"
               />
             </div>
@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="flex mt-8 gap-8">
               <img src="/images/Facebook.svg" className="w-12 cursor-pointer" />
               <img
-                src="/images/instagram.svg"
+                src="/images/Instagram.svg"
                 className="w-12 cursor-pointer"
               />
             </div>

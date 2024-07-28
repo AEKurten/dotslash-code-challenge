@@ -22,7 +22,7 @@ const images = [
     id: 1,
   },
   {
-    url: "/images/Main-boot-4.png",
+    url: "/images/main-boot-4.png",
     id: 2,
   },
   {
