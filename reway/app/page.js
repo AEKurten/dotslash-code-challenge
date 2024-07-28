@@ -1,14 +1,14 @@
 "use client";
-import Bannerstrip from "@/components/Bannerstrip";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import Emaillist from "@/components/Emaillist";
-import Footer from "@/components/Footer";
+import Bannerstrip from "/components/Bannerstrip";
+import Breadcrumbs from "/components/Breadcrumbs";
+import Emaillist from "/components/Emaillist";
+import Footer from "/components/Footer";
 import MobileSearch from "@/components/MobileSearch";
-import Navbar from "@/components/Navbar";
-import Product from "@/components/Product";
-import Search from "@/components/Search";
-import Similarproducts from "@/components/Similarproducts";
-import useMobileCheck from "@/hooks/checkMobile";
+import Navbar from "/components/Navbar";
+import Product from "/components/Product";
+import Search from "/components/Search";
+import Similarproducts from "/components/Similarproducts";
+import useMobileCheck from "/hooks/checkMobile";
 import { advertBanner } from "@/public/export";
 import Image from "next/image";
 
