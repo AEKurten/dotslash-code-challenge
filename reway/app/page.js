@@ -1,5 +1,5 @@
 "use client";
-import Bannerstrip from "/components/Bannerstrip";
+import Bannerstrip from "/components/BannerStrip";
 import Breadcrumbs from "/components/Breadcrumbs";
 import Emaillist from "/components/Emaillist";
 import Footer from "/components/Footer";
