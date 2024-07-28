@@ -11,13 +11,13 @@ const Chip = ({
   bottomPos,
   rightPos,
   absolute,
-  opacity,
+  classes,
 }) => {
   return (
     <div
       className={`bg-${bgColor} py-1 px-4 rounded-md w-fit h-fit flex items-center gap-2 text-${textColor} ${
         absolute == true ? `absolute` : ``
-      } top-${topPos} left-${leftPos} right-${rightPos} bottom-${bottomPos} opacity-${opacity}`}
+      } top-${topPos} left-${leftPos} right-${rightPos} bottom-${bottomPos} ${classes}`}
     >
       <FontAwesomeIcon icon={icon} />
       <p>{text}</p>

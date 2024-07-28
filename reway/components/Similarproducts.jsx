@@ -36,13 +36,14 @@ const Similarproducts = () => {
                 {boot.isLowStock && (
                   <Chip
                     absolute={true}
-                    bgColor="rewayBlack"
                     text="Low Stock"
                     textColor="rewayWhite"
-                    opacity={50}
+                    classes="chipToBottom bgOpacity"
                   />
                 )}
-                <img src={boot.image} alt="" />
+                <div>
+                  <img src={boot.image} alt="" />
+                </div>
                 <div className="flex flex-col gap-2 mt-4 relative">
                   <p className="font-bold font-suez text-lg">{boot.title}</p>
                   <div className="flex items-center gap-2 text-rewayGrey">
