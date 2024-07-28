@@ -63,7 +63,10 @@ const bootData = [
   },
 ];
 
-export { navItems, navIcons, bootData, navbar };
+const sizes = [5, 6, 7, 8, 9, 10, 11, 12];
+const quantity = [1, 2, 3, 4];
+
+export { navItems, navIcons, bootData, navbar, sizes, quantity };
 
 //Create mock db with products?
 //create data object with product info

@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
+import { sizes, quantity } from "@/constants/data";
 
 const Addcart = () => {
   //refactor code to take in props and loop over options to render options
+  const notify = () => toast.success("Item added to cart!");
   return (
     <div className="bg-rewayLighterGray flex flex-col p-8 gap-7">
       <div className="flex flex-col">
@@ -12,12 +16,14 @@ const Addcart = () => {
         </label>
         <select className="py-2 rounded-sm border border-rewayGrey text-rewayGrey px-2">
           <option value="SELECT SIZE">SELECT SIZE</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
+          {sizes.map((size) => (
+            <option value={size} key={size}>
+              {size}
+            </option>
+          ))}
         </select>
       </div>
-      <div className="flex flex-col text-rewayGrey px-2">
+      <div className="flex flex-col text-rewayGrey">
         <label htmlFor="size" className="uppercase mb-2">
           Quantity
         </label>
@@ -26,13 +32,18 @@ const Addcart = () => {
           className="py-2 rounded-sm border border-rewayGrey text-rewayGrey px-2"
         >
           <option value="8">SELECT QUANTITY</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
+          {quantity.map((quantity) => (
+            <option value={quantity} key={quantity}>
+              {quantity}
+            </option>
+          ))}
         </select>
       </div>
 
-      <button className="uppercase bg-rewayBlue text-rewayWhite py-8 text-3xl flex items-center justify-center gap-4 font-suez font-bold">
+      <button
+        onClick={notify}
+        className="uppercase bg-rewayBlue text-rewayWhite py-8 text-3xl flex items-center justify-center gap-4 font-suez font-bold"
+      >
         <FontAwesomeIcon icon={faCartShopping} />
         Add to cart
       </button>
