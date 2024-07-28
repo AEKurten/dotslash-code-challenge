@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 
 //a check to see if the device is a mobile device
