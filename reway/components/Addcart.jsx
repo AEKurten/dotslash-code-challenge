@@ -42,7 +42,7 @@ const Addcart = () => {
 
       <button
         onClick={notify}
-        className="uppercase bg-rewayBlue text-rewayWhite py-8 text-3xl flex items-center justify-center gap-4 font-suez font-bold"
+        className="uppercase bg-rewayBlue text-rewayWhite py-8 text-3xl flex items-center justify-center gap-4 font-suez font-bold max-md:text-lg"
       >
         <FontAwesomeIcon icon={faCartShopping} />
         Add to cart

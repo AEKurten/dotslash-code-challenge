@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+//a check to see if the device is a mobile device
 const useMobileCheck = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 720);
 
@@ -12,13 +13,8 @@ const useMobileCheck = () => {
   };
 
   useEffect(() => {
-    // Set initial state
     handleResize();
-
-    // Add resize event listener
     window.addEventListener("resize", handleResize);
-
-    // Cleanup listener on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

@@ -20,7 +20,10 @@ const Similarproducts = () => {
       <div className="flex gap-12 flex-wrap">
         {bootData.map((boot) => {
           return (
-            <div className="w-[30%] h-fit cursor-pointer">
+            <div
+              key={boot.title}
+              className="w-[30%] h-fit cursor-pointer max-md:w-full"
+            >
               <div className="w-full h-full flex flex-col relative">
                 {boot.isMarkedDown && (
                   <Chip
@@ -41,9 +44,9 @@ const Similarproducts = () => {
                     classes="chipToBottom bgOpacity"
                   />
                 )}
-                <div>
-                  <img src={boot.image} alt="" />
-                </div>
+
+                <img src={boot.image} alt="" />
+
                 <div className="flex flex-col gap-2 mt-4 relative">
                   <p className="font-bold font-suez text-lg">{boot.title}</p>
                   <div className="flex items-center gap-2 text-rewayGrey">
