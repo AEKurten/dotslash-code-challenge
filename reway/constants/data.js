@@ -28,6 +28,7 @@ const bootData = [
     brand: "Superbalist",
     price: "500",
     isLowStock: false,
+    id: 0,
   },
   {
     image: "/images/Boots03.png",
@@ -36,6 +37,7 @@ const bootData = [
     brand: "Superbalist",
     price: "539",
     isLowStock: true,
+    id: 1,
   },
   {
     image: "/images/Boots01.png",
@@ -44,6 +46,7 @@ const bootData = [
     brand: "Superbalist",
     price: "420",
     isLowStock: true,
+    id: 2,
   },
   {
     image: "/images/Boots04.png",
@@ -52,6 +55,7 @@ const bootData = [
     brand: "Jack and Jones",
     price: "500",
     isLowStock: true,
+    id: 3,
   },
   {
     image: "/images/Boots02.png",
@@ -60,6 +64,7 @@ const bootData = [
     brand: "Superbalist",
     price: "600",
     isLowStock: false,
+    id: 4,
   },
 ];
 

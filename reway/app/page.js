@@ -42,7 +42,7 @@ export default function Home() {
                   Up to 50% off!
                 </p>
               </div>
-              <button className="text-rewayWhite border-2 h-fit px-8 py-2 rounded-[3px] font-suez mr-[30%]  font-semibold max-md:mr-0 max-md:text-sm max-lg:mr-6">
+              <button className="text-rewayWhite border-2 h-fit px-8 py-2 rounded-[3px] font-suez mr-[25%] font-semibold max-md:mr-0 max-md:text-sm max-lg:mr-6">
                 Shop now
               </button>
             </div>

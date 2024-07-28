@@ -4,7 +4,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Breadcrumbs = () => {
   return (
-    <div className="flex items-center gap-2 my-8 font-body text-rewayGrey max-md:text-sm">
+    <div className="flex items-center gap-2 my-8 font-body text-rewayGrey max-md:text-sm ">
       <p className="text-rewayBlue">Home</p>
       <FontAwesomeIcon icon={faChevronRight} />
       <p className="text-rewayBlue">Boots</p>

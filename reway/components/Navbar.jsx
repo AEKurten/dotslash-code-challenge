@@ -37,7 +37,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <p
                 key={item}
-                className={`font-suez font-extrabold text-[17px] uppercase hover:cursor-pointer hover:text-rewayBlue transition-all duration-300 ${
+                className={`font-suez font-semibold text-[17px] uppercase hover:cursor-pointer hover:text-rewayBlue transition-all duration-300 ${
                   isActive === index ? `text-rewayBlue` : ``
                 }`}
                 onClick={() => toggleActiveState(index)}

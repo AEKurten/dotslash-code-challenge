@@ -12,18 +12,16 @@ const Search = () => {
       <div className="bg-rewayBlue text-rewayWhite p-5">
         <div className="flex items-center gap-2">
           <FontAwesomeIcon icon={faChevronLeft} />
-          <p className="text-[16px]">Hide</p>
+          <p className="text-[16px] font-body font-thin">Hide</p>
         </div>
         <div className="flex items-center gap-3">
-          <p className="text-[20px] font-suez font-semibold uppercase">
-            Search reway
-          </p>
+          <p className="text-[20px] font-suez  uppercase">Search reway</p>
           <FontAwesomeIcon icon={faSearch} />
         </div>
       </div>
       <div className="p-6 flex flex-col gap-4">
         <div>
-          <label>Brands</label>
+          <label className="font-body uppercase text-rewayGrey">Brands</label>
           <TagsInput
             value={selected}
             onChange={setSelected}
@@ -32,12 +30,18 @@ const Search = () => {
           />
         </div>
         <div>
-          <label htmlFor="Colour">Colour</label>
+          <label
+            htmlFor="Colour"
+            className="font-body uppercase text-rewayGrey"
+          >
+            Colour
+          </label>
           <select
             name="itemColour"
             id="colour"
-            className="w-full border border-rewayLightGray rounded-sm p-2"
+            className="w-full border border-rewayLightGray rounded-sm p-2 text-rewayGrey"
           >
+            <option value="Yellow">SELECT COLOUR</option>
             <option value="Yellow">Yellow</option>
             <option value="Yellow">Blue</option>
           </select>
@@ -57,7 +61,7 @@ const Search = () => {
           />
         </div>
         {/* add toast notifcations and perhaps email.js */}
-        <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center font-suez font-bold text-xl">
+        <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center font-suez uppercase text-xl">
           <FontAwesomeIcon icon={faSearch} />
           Search
         </button>

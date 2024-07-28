@@ -9,15 +9,15 @@ const Productinfo = () => {
       <p className="uppercase font-suez font-bold text-xl">Dylan Hiker Boot</p>
       <div className="flex items-center gap-2 text-rewayLightGray my-1">
         <FontAwesomeIcon icon={faStoreAlt} />
-        <p className="font-suez uppercase font-thin">Superbalist</p>
+        <p className="font-body uppercase font-thin">Superbalist</p>
       </div>
       <div className="grid grid-cols-3 my-4">
-        <div className="col-span-1 flex flex-col gap-2">
+        <div className="col-span-1 flex flex-col gap-2 font-body ">
           <p>Fabrication</p>
           <p>Colour</p>
           <p>Brand</p>
         </div>
-        <div className="col-span-1 flex flex-col gap-2 font-bold">
+        <div className="col-span-1 flex flex-col gap-2 font-body font-bold">
           <p>Faux Leather</p>
           <div className="flex items-center gap-2">
             <div className="bg-[#91613D] border-2 rounded-full h-4 w-4"></div>
@@ -28,8 +28,10 @@ const Productinfo = () => {
       </div>
       <hr />
       <div className="my-4">
-        <p className="uppercase text-rewayLightGray">Product Details</p>
-        <ul className="list-disc ml-4 mt-2 text-rewayGrey">
+        <p className="uppercase text-rewayLightGray font-body text-xs">
+          Product Details
+        </p>
+        <ul className="list-disc ml-4 mt-2 text-rewayGrey text-sm font-body">
           <li>Hiking Boot</li>
           <li>Speed laces</li>
           <li>Lace-up design</li>
@@ -44,7 +46,7 @@ const Productinfo = () => {
           textColor="rewayWhite"
         />
         <div>
-          <p className="line-through text-rewayGrey font-bold font-suez">
+          <p className="line-through text-rewayGrey font-normal font-suez">
             R599
           </p>
           <p className="text-3xl font-black font-suez">R359</p>
