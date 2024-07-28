@@ -137,8 +137,8 @@ const Imageslider = () => {
                   position: "fixed", // Change to fixed positioning to ensure it follows the cursor relative to the viewport
                   top: cursorPos.y + 20, // Adjust this value to control the distance from the cursor
                   left: cursorPos.x + 20, // Adjust this value to control the distance from the cursor
-                  backgroundColor: "rgba(0, 0, 0, 0.7)",
-                  color: "white",
+                  backgroundColor: "rgba(255, 255, 255, 0.5)",
+                  color: "grey",
                   padding: "5px 10px",
                   borderRadius: "5px",
                   pointerEvents: "none", // Make the label not interfere with cursor actions

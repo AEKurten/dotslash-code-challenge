@@ -28,7 +28,7 @@ export default function Home() {
               src={advertBanner}
               height={616}
               width={307}
-              className="my-8 object-cover w-3/4"
+              className="my-8 object-cover w-11/12"
             />
             <Emaillist />
           </div>
