@@ -2,14 +2,14 @@
 import { useState, useEffect } from "react";
 
 // A check to see if the device is a mobile device
-const useMobileCheck = () => {
-  const [isMobile, setIsMobile] = useState(false);
+const useMidDeviceCheck = () => {
+  const [isMidDevice, setIsMidDevice] = useState(false);
 
   useEffect(() => {
     // Check if window is defined to ensure the code is running on the client
     if (typeof window !== "undefined") {
       const handleResize = () => {
-        setIsMobile(window.innerWidth < 880);
+        setIsMidDevice(window.innerWidth < 1024);
       };
 
       // Initial check
@@ -23,7 +23,7 @@ const useMobileCheck = () => {
     }
   }, []); // Empty dependency array ensures this runs once
 
-  return isMobile;
+  return isMidDevice;
 };
 
-export default useMobileCheck;
+export default useMidDeviceCheck;

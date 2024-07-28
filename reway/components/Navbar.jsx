@@ -4,13 +4,15 @@ import React, { useState } from "react";
 import { logo } from "@/public/export";
 import { navIcons, navItems } from "@/constants/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import useMobileCheck from "@/hooks/checkMobile";
+import useMidDeviceCheck from "@/hooks/checkMidDevice";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(null);
   const isMobile = useMobileCheck();
+  const isMidDevice = useMidDeviceCheck();
 
   const toggleActiveState = (index) => {
     if (isActive === index) {
@@ -21,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-11 py-6 flex items-center justify-between">
+    <div className="px-11 py-6 flex items-center justify-between ">
       {isMobile && (
         <div className="flex items-center justify-between w-full">
           <FontAwesomeIcon icon={faBars} size="2x" />
@@ -44,31 +46,44 @@ const Navbar = () => {
               </p>
             ))}
           </div>
-          <div className="flex gap-8">
-            {navIcons.map((icon) => (
+          {isMidDevice && (
+            <div className="flex gap-8">
               <FontAwesomeIcon
-                key={icon}
-                icon={icon}
+                icon={faChevronDown}
                 size="lg"
                 className="hover:text-rewayBlue hover:cursor-pointer transition-all duration-300"
               />
-            ))}
-          </div>
-          <div className="flex gap-8 items-center">
-            {/* Create active/hover states */}
-            <Link
-              href="#"
-              className="uppercase text-rewayBlue font-bold font-suez"
-            >
-              sign up
-            </Link>
-            <Link
-              href="#"
-              className="uppercase text-rewayBlue font-bold border-2 border-rewayBlue px-4 py-2 rounded-[3px] font-suez"
-            >
-              Login
-            </Link>
-          </div>
+            </div>
+          )}
+          {!isMidDevice && (
+            <>
+              <div className="flex gap-8">
+                {navIcons.map((icon) => (
+                  <FontAwesomeIcon
+                    key={icon}
+                    icon={icon}
+                    size="lg"
+                    className="hover:text-rewayBlue hover:cursor-pointer transition-all duration-300"
+                  />
+                ))}
+              </div>
+              <div className="flex gap-8 items-center">
+                {/* Create active/hover states */}
+                <Link
+                  href="#"
+                  className="uppercase text-rewayBlue font-bold font-suez"
+                >
+                  sign up
+                </Link>
+                <Link
+                  href="#"
+                  className="uppercase text-rewayBlue font-bold border-2 border-rewayBlue px-4 py-2 rounded-[3px] font-suez"
+                >
+                  Login
+                </Link>
+              </div>
+            </>
+          )}
         </>
       )}
     </div>

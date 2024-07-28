@@ -22,7 +22,7 @@ const Similarproducts = () => {
           return (
             <div
               key={boot.title}
-              className="w-[30%] h-fit cursor-pointer max-md:w-full"
+              className="w-[30%] h-fit cursor-pointer max-md:w-full max-lg:w-[45%]"
             >
               <div className="w-full h-full flex flex-col relative">
                 {boot.isMarkedDown && (

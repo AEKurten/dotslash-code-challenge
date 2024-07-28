@@ -3,8 +3,8 @@ import React from "react";
 
 const BannerStrip = () => {
   return (
-    <div className="bg-rewayLighterGray py-6 flex justify-between px-14 items-center mb-8 max-md:py-2 max-md:px-8">
-      <h3 className="ml-24 text-rewayGrey font-semibold uppercase text-[17px] font-suez max-md:ml-0 max-md:text-sm">
+    <div className="bg-rewayLighterGray py-6 flex justify-between px-14 items-center mb-8 max-md:py-2 max-md:px-8 max-lg:px-8">
+      <h3 className="ml-24 text-rewayGrey font-semibold uppercase text-[17px] font-suez max-md:ml-0 max-md:text-sm ">
         Avdenture is just around the corner!
       </h3>
       <div className="flex gap-6 items-center max-md:flex-col">

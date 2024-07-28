@@ -170,7 +170,7 @@ const Imageslider = () => {
                 src={image.url}
                 width={1920}
                 height={1080}
-                className={`cursor-pointer w-[7.7rem] max-md:w-28${
+                className={`cursor-pointer w-[7.7rem] max-md:w-24 ${
                   isActive === image.id
                     ? `border-2 border-rewayBlue brightness-75`
                     : ``
