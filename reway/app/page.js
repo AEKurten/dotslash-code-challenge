@@ -1,26 +1,21 @@
 "use client";
+import dynamic from "next/dynamic";
 import Bannerstrip from "/components/BannerStrip";
 import Breadcrumbs from "/components/Breadcrumbs";
 import Emaillist from "/components/Emaillist";
-import Footer from "/components/Footer";
-import MobileSearch from "@/components/MobileSearch";
-import Navbar from "/components/Navbar";
 import Product from "/components/Product";
 import Search from "/components/Search";
 import Similarproducts from "/components/Similarproducts";
-import useMobileCheck from "/hooks/checkMobile";
 import { advertBanner } from "@/public/export";
 import Image from "next/image";
 
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+const Navbar = dynamic(() => import("@/components/Navbar"), { ssr: false });
+const MobileSearch = dynamic(() => import("@/components/MobileSearch"), {
+  ssr: false,
+});
+
 export default function Home() {
-  const isMobile = useMobileCheck();
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // This ensures we only try rendering after mounting
-  }, []);
-
-  if (!isClient) return null; // Avoid rendering on the server
   return (
     <>
       <Navbar />
@@ -52,7 +47,7 @@ export default function Home() {
               </button>
             </div>
             <Breadcrumbs />
-            {isMobile && <MobileSearch />}
+            <MobileSearch />
             <Product />
             <Similarproducts />
           </div>

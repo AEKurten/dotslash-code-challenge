@@ -11,13 +11,6 @@ import useMobileCheck from "@/hooks/checkMobile";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(null);
   const isMobile = useMobileCheck();
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // This ensures we only try rendering after mounting
-  }, []);
-
-  if (!isClient) return null; // Avoid rendering on the server
 
   const toggleActiveState = (index) => {
     if (isActive === index) {

@@ -5,13 +5,6 @@ import useMobileCheck from "@/hooks/checkMobile";
 
 const Footer = () => {
   const isMobile = useMobileCheck();
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // This ensures we only try rendering after mounting
-  }, []);
-
-  if (!isClient) return null; // Avoid rendering on the server
   return (
     <>
       {isMobile && (
