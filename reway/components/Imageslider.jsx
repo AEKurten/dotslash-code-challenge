@@ -84,9 +84,8 @@ const Imageslider = () => {
             icon={faTag}
             text="-40% Off"
             textColor="rewayWhite"
-            topPos={5}
-            rightPos={5}
             absolute={true}
+            classes="chipHoverTop"
           />
           <div className="absolute top-[45%] w-full flex justify-between px-8 text-rewayGrey z-50">
             {/* Previous Button */}

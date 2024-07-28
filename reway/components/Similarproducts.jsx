@@ -20,7 +20,7 @@ const Similarproducts = () => {
       <div className="flex gap-12 flex-wrap">
         {bootData.map((boot) => {
           return (
-            <div className="w-[30%] h-fit">
+            <div className="w-[30%] h-fit cursor-pointer">
               <div className="w-full h-full flex flex-col relative">
                 {boot.isMarkedDown && (
                   <Chip

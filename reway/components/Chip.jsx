@@ -15,7 +15,7 @@ const Chip = ({
 }) => {
   return (
     <div
-      className={`bg-${bgColor} py-1 px-4 rounded-md w-fit h-fit flex items-center gap-2 text-${textColor} ${
+      className={`bg-${bgColor} py-1 px-4 z-[1000] rounded-md w-fit h-fit flex items-center gap-2 text-${textColor} ${
         absolute == true ? `absolute` : ``
       } top-${topPos} left-${leftPos} right-${rightPos} bottom-${bottomPos} ${classes}`}
     >

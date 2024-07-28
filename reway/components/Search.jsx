@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { TagsInput } from "react-tag-input-component";
+import ReactSlider from "react-slider";
 
 const Search = () => {
   const [selected, setSelected] = useState(["SUPERBALIST", "Mango"]);
@@ -41,12 +42,22 @@ const Search = () => {
             <option value="Yellow">Blue</option>
           </select>
         </div>
-        <div>
+        <div className="w-full ">
           <label htmlFor="pricing">Pricing</label>
           {/* add price slider */}
+          <ReactSlider
+            className="horizontal-slider"
+            thumbClassName="example-thumb"
+            trackClassName="example-track"
+            defaultValue={[50, 3500]}
+            ariaLabel={["Lower thumb", "Upper thumb"]}
+            ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
+            pearling
+            minDistance={10}
+          />
         </div>
         {/* add toast notifcations and perhaps email.js */}
-        <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center">
+        <button className="bg-rewayBlue text-rewayWhite py-4 w-2/3 self-center flex gap-2 items-center justify-center font-suez font-bold text-xl">
           <FontAwesomeIcon icon={faSearch} />
           Search
         </button>
