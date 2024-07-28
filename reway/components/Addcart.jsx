@@ -6,8 +6,8 @@ import { toast } from "react-toastify";
 import { sizes, quantity } from "@/constants/data";
 
 const Addcart = () => {
-  //refactor code to take in props and loop over options to render options
   const notify = () => toast.success("Item added to cart!");
+
   return (
     <div className="bg-rewayLighterGray flex flex-col p-8 gap-7">
       <div className="flex flex-col">

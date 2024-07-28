@@ -11,7 +11,6 @@ import Chip from "./Chip";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
-// Move images to a separate data file if necessary
 const images = [
   {
     url: "/images/Main-boot.png",
@@ -133,6 +132,7 @@ const Imageslider = () => {
             {/* Label that follows the cursor */}
             {showLabel && (
               <div
+                className="max-md:hidden"
                 style={{
                   position: "fixed", // Change to fixed positioning to ensure it follows the cursor relative to the viewport
                   top: cursorPos.y + 20, // Adjust this value to control the distance from the cursor

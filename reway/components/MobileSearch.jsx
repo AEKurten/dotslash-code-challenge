@@ -61,7 +61,6 @@ const MobileSearch = () => {
                   minDistance={10}
                 />
               </div>
-              {/* add toast notifcations and perhaps email.js */}
               <button className="bg-rewayBlue text-rewayWhite py-4 w-full self-center flex gap-2 items-center justify-center font-suez font-bold text-xl">
                 <FontAwesomeIcon icon={faSearch} />
                 Search
